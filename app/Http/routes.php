@@ -21,3 +21,7 @@ Route::post('/getPost', ['uses' => 'PostsController@getPost', 'as' => 'getPost']
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
