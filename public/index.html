@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>home</title>
     <link rel="stylesheet" href="{{asset('css/IndexStyle.css')}}">
-    <link rel="stylesheet" href="{{asset('css/subStyle.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -24,23 +23,12 @@
     <script src="{{asset('scripts/app/modalPost/service.js')}}"></script>
     <script src="{{asset('scripts/app/auth/controller.js')}}"></script>
     <script src="{{asset('scripts/app/auth/directive.js')}}"></script>
-    <script src="{{asset('scripts/app/switcher/directive.js')}}"></script>
-    <script src="{{asset('scripts/app/sub/comments/directive.js')}}"></script>
-    <script src="{{asset('scripts/app/sub/messages/directive.js')}}"></script>
-    <script src="{{asset('scripts/app/sub/subscriptions/directive.js')}}"></script>
 
 
 
 </head>
 <body ng-app="mainApp">
 <div class="wrapper">
-
-<div id="auth">
-
-
-
-
-</div>
     <div class="left-panel">
         <div class="search-module">
             <input type="text" placeholder="search">
@@ -51,9 +39,12 @@
                 <img src="https://pp.vk.me/c624117/v624117735/428dd/9g5-B8iHzpM.jpg" alt="">
                 <h2>Vlad Posyniak</h2>
             </span>
-
-            <switcher></switcher>
-            
+            <ul>
+                <li><a href="">Activity</a></li>
+                <li><a href="">Comments</a></li>
+                <li><a href="">Messages</a></li>
+                <li><a href="">Subscriptions</a></li>
+            </ul>
         </div>
 
         <div class="friends-module">
@@ -78,7 +69,6 @@
     </div>
 
     <div class="container">
-    <div id="main_activity">
         <div class="posts">
             <div class="create-post">
                 <input type="text" name="nameOfPost" required placeholder="название">
@@ -91,17 +81,83 @@
             <modalpost></modalpost>
             <posts></posts>
 
+            <div class="post">
+                <h2>clothes for best days</h2>
+                <div class="post-likes">
+                    <span class="post-dislike">-123</span>
+                    <span class="post-like">+543</span>
+                </div>
+                <img src="https://pp.vk.me/c7011/v7011206/22eb0/QOHKYfCF0Xc.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem cupiditate ducimus eius explicabo
+                    facilis fugit ipsum itaque laboriosam libero minima necessitatibus nostrum, quod reiciendis,
+                    sapiente sint, tempore voluptate voluptatem?</p>
+                <div class="post-information">
+                    <div class="post-tags">
+                        <a href="">яркое</a>
+                        <a href="">лето</a>
+                        <a href="">зима</a>
+                        <a href="">аксесуары</a>
+                        <a href="">необычное</a>
+                    </div>
+                    <div class="post-author-date">
+                        <span class="post-author"><a href="">BitFox</a></span>
+                        <span class="post-date">24.03.2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <h2>clothes for best days</h2>
+                <div class="post-likes">
+                    <span class="post-dislike">-123</span>
+                    <span class="post-like">+543</span>
+                </div>
+                <img src="https://pp.vk.me/c7011/v7011206/22eb0/QOHKYfCF0Xc.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem cupiditate ducimus eius explicabo
+                    facilis fugit ipsum itaque laboriosam libero minima necessitatibus nostrum, quod reiciendis,
+                    sapiente sint, tempore voluptate voluptatem?</p>
+                <div class="post-information">
+                    <div class="post-tags">
+                        <a href="">яркое</a>
+                        <a href="">лето</a>
+                        <a href="">зима</a>
+                        <a href="">аксесуары</a>
+                        <a href="">необычное</a>
+                    </div>
+                    <div class="post-author-date">
+                        <span class="post-author"><a href="">BitFox</a></span>
+                        <span class="post-date">24.03.2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <h2>clothes for best days</h2>
+                <div class="post-likes">
+                    <span class="post-dislike">-123</span>
+                    <span class="post-like">+543</span>
+                </div>
+                <img src="https://pp.vk.me/c7011/v7011206/22eb0/QOHKYfCF0Xc.jpg" alt="">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem cupiditate ducimus eius explicabo
+                    facilis fugit ipsum itaque laboriosam libero minima necessitatibus nostrum, quod reiciendis,
+                    sapiente sint, tempore voluptate voluptatem?</p>
+                <div class="post-information">
+                    <div class="post-tags">
+                        <a href="">яркое</a>
+                        <a href="">лето</a>
+                        <a href="">зима</a>
+                        <a href="">аксесуары</a>
+                        <a href="">необычное</a>
+                    </div>
+                    <div class="post-author-date">
+                        <span class="post-author"><a href="">BitFox</a></span>
+                        <span class="post-date">24.03.2016</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    
-    <div class="posts">
-        <div id="sub_activity">
-    </div>
-    
-
-
-
-    </div>    
 
         <div class="right-panel">
             <div class="popular-module">
